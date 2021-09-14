@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset='utf-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Desktop Vision Example</title>
+	
+		<link rel='icon' type='image/png' href='/icon.png'>
+		<link rel="stylesheet" href="/styles/global.css">
+		<script defer src='/main/main.js'></script>
+	</head>
+	
+	<body onload="loadThreeExample()">
+		<div class="content-bg"></div>
+		<img src="/three/logo.svg" alt="Three logo" />
+		<h1 class="title">Three JS Desktop Vision Oauth code Example</h1>
+		<h3>This example showcases Desktop Vision running in a threejs scene.</h3>
+		<!-- How to -->
+		<div class="step-card">
+			<h2>Flow:</h2>
+			<ol>
+				<li>
+					<p class="text">Generate oauth code</p>
+				</li>
+				<li>
+					<p>
+						Enter oauth code into https://desktop.vision/app/#/authorize
+					</p>
+				</li>
+				<li>
+					<p>
+						The code will automatically be used to retrieve auth token after it is validated, and list available computers on the account
+					</p>
+				</li>
+				<li>
+					<p>Select a computer to connect to and display in the scene</p>
+				</li>
+			</ol>
+		</div>
+		<div class="step-card">
+			<h2>Code:</h2>
+			<h1 id="code-field"></h1>
+			<p id="code-error"></p>
+			<button id="dv-create-auth-code">
+				Create new oauth code
+			</button>
+		</div>
+		<div class="step-card" style="display: none">
+			<h2>Current Stream:</h2>
+			<video autoplay muted id="video-stream" alt="demo" class="stream-video">
+				<track kind="captions" />
+			</video>
+		</div>
+
+	<!-- THREE Scene -->
+		<div class="step-card">
+	<h2>Scene:</h2>
+	<div id="scene-container" class="scene-wrapper"></div>
+	<div class="flex-row scene-buttons">
+		<button id="enter-scene-button">Enter VR Scene</button>
+		<button id="computer-test-button">Create Test Computer</button>
+		<button id="computer-remove-button">Remove Computer</button>
+	</div>
+</div>
+</body>
+
+</html>

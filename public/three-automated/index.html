@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Desktop Vision Example</title>
+
+	<link rel='icon' type='image/png' href='/icon.png'>
+	<link rel="stylesheet" href="/styles/global.css">
+	<script defer src='/main/main.js'></script>
+</head>
+
+<body onload="loadThreeAutomatedExample()">
+	
+	<img src="/three/logo.svg" alt="Three logo" />
+	<h1 class="title">Three JS Desktop Vision Oauth code Example - Automated</h1>
+	<div class="step-card" style="display: none">
+		<h2>Current Stream:</h2>
+		<video autoplay muted id="video-stream" alt="demo" class="stream-video">
+			<track kind="captions" />
+		</video>
+	</div>
+	<div id="scene-container" class="scene-wrapper">
+		<button id="enter-scene-button" class="top-right">Enter VR Scene</button>
+	</div>
+</body>
+
+</html>

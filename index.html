@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Desktop Vision for JS | Desktop Vision JS SDK documentation </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content="Desktop Vision for JS | Desktop Vision JS SDK documentation ">
+
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles/main.css">
+  <script defer src='/build/bundle.js'></script>
+
+</head>
+
+<body onload="locationHashChanged()">
+  <div class="top-navbar">
+    <a class="burger-icon" onclick="toggleMenu()">
+      <svg name="Hamburger" style="vertical-align: middle;" width="34" height="34" viewbox="0 0 24 24">
+        <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+          d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path>
+      </svg>
+    </a>
+
+
+    <a class="brand" href="index.html">
+      <img src="logo.svg" alt="" class="logomark">
+      <span class="brand-title">desktop<b>vision</b></span>
+    </a>
+  </div>
+
+  <div class="body-content">
+    <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+
+    <nav id="sidebar" role="navigation">
+      <div class="sidebar">
+
+          <div id="navbar">
+            <h3>Examples</h3>
+            <ul class="nav level1 navbar-nav">
+              <li>
+                <a href="#2d" class="sidebar-item"> 2D</a>
+              </li>
+              <li>
+                <a href="#three" class="sidebar-item"> Three JS - Manual</a>
+              </li>
+              <li>
+                <a href="#threeautomated" class="sidebar-item"> Three JS - Automated</a>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar-item-separator">
+          </div>
+          <div id="navbar">
+            <h3>Links</h3>
+            <ul class="nav level2 navbar-nav">
+              <li>
+                <a href="https://js.desktop.vision/docs/" class="sidebar-item" title="Desktop Vision JS SDK Docs"
+                  target="_blank">Desktop Vision JS SDK Docs</a>
+              </li>
+              <li>
+                <a href="https://unity.desktop.vision" class="sidebar-item" title="Desktop Vision Unity Package API"
+                  target="_blank">Desktop Vision Unity Package API</a>
+              </li>
+              <li>
+                <a href="https://desktop.vision/app/" class="sidebar-item" name="" title="Desktop Vision Web App"
+                  target="_blank">Desktop Vision Web App</a>
+
+              </li>
+              <li>
+                <a href="https://partners.desktop.vision/" class="sidebar-item" name=""
+                  title="Desktop Vision Partner Portal" target="_blank">Desktop Vision Partner Portal</a>
+
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UCYpXzAhoP_Lip01XY9Z__PQ/videos?view=0&amp;sort=da"
+                  class="sidebar-item" name="" title="Youtube" target="_blank">Youtube</a>
+
+              </li>
+              <li>
+                <a href="https://github.com/Desktop-Vision/DesktopVisionUnityPackage" class="sidebar-item" name=""
+                  title="Github" target="_blank">Github</a>
+
+              </li>
+              <li>
+                <a href="https://sidequestvr.com/app/11598/desktop-vision" class="sidebar-item" name=""
+                  title="Sidequest" target="_blank">Sidequest</a>
+              </li>
+            </ul>
+            </ul>
+          </div>
+      </div>
+      <div class="footer">
+        Desktop Vision JS SDK documentation
+      </div>
+    </nav>
+
+      <iframe src="" style="width: 100%; height: 100%; border: none;" id="example-frame"  allow="xr-spatial-tracking" allowfullscreen=""></iframe>
+
+  </div>
+
+
+  <script type="text/javascript" src="scripts/menu.js"></script>
+</body>
+
+</html>

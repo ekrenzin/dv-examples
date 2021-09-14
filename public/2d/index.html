@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Desktop Vision Example</title>
+
+	<link rel='icon' type='image/png' href='/icon.png'>
+	<link rel="stylesheet" href="/styles/global.css">
+	<script defer src='/main/main.js'></script>
+</head>
+
+<body onload="loadFlatExample()">
+	<div class="content-bg"></div>
+	<img src="/2d/logo.svg" alt="HTML logo" />
+	<h1 class="title">2D JS Desktop Vision Example</h1>
+	<h3>This example showcases Desktop Vision running in a vanilla js web app.</h3>
+
+	<!-- How to -->
+	<div class="step-card">
+		<h2>Flow:</h2>
+		<ol>
+			<li>
+				<p class="text">Generate oauth code</p>
+			</li>
+			<li>
+				<p>
+					Enter oauth code into https://desktop.vision/app/#/authorize
+				</p>
+			</li>
+			<li>
+				<p>
+					Use the code to retrieve auth token
+				</p>
+			</li>
+			<li>List available computers on the account
+			</li>
+			<li>
+				<p>Connect to computer</p>
+			</li>
+		</ol>
+	</div>
+	<div class="step-card">
+		<h2>Code:</h2>
+		<h1 id="code-field"></h1>
+		<p id="code-error"></p>
+		<button id="dv-create-auth-code">
+			Create new oauth code
+		</button>
+	</div>
+	<div class="step-card">
+		<h2>Auth Token:</h2>
+		<h1 id="token-field"></h1>
+		<p id="token-error"></p>
+		<button id="dv-validate-auth-code">
+			Create Auth Token with validated code
+		</button>
+	</div>
+	<div class="step-card">
+		<h2>Available Computers:</h2>
+		<div class="device-grid" id="dv-computers">
+		</div>
+		<p id="computers-error"></p>
+		<button id="dv-get-computers">
+			List Computers with Auth Token
+		</button>
+	</div>
+	<div class="step-card">
+		<h2>Current Stream:</h2>
+		<video autoplay muted id="video-stream" alt="demo" class="stream-video">
+			<track kind="captions" />
+		</video>
+	</div>
+
+</body>
+
+</html>
